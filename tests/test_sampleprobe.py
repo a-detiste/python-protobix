@@ -3,9 +3,12 @@ Test Protobix sampleprobe
 """
 import configobj
 import pytest
-import mock
 import unittest
 import socket
+try:
+    from unittest import mock
+except ImportError:
+    import mock
 
 import resource
 import time

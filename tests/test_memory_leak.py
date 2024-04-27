@@ -3,8 +3,11 @@ Test long running process & detect memory leak
 """
 import configobj
 import pytest
-import mock
 import unittest
+try:
+    from unittest import mock
+except ImportError:
+    import mock
 
 import resource
 import sys

@@ -3,9 +3,12 @@ Tests for protobix.ZabbixAgentConfig
 """
 import configobj
 import pytest
-import mock
 import unittest
 import logging
+try:
+    from unittest import mock
+except ImportError:
+    import mock
 
 import sys
 import os

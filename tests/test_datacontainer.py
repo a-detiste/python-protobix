@@ -3,12 +3,15 @@ Tests for protobix.SenderProtocol
 """
 import configobj
 import pytest
-import mock
 import unittest
 import time
 try: import simplejson as json
 except ImportError: import json
 import socket
+try:
+    from unittest import mock
+except ImportError:
+    import mock
 
 import sys
 import os
